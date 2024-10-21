@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Reisbestemming</title>
+	</head>
+	<body>
+		<header>
+				<nav>
+			  		<a href="index.html">HOMEPAGINA</a>
+			  		<a href="geschiedenis.html">GESCHIEDENIS</a>
+			  		<a href="cultuur.html">CULTUUR</a>
+			  		<a href="cuisine.html">CUISINE</a>
+			 		<a href="wattedoen.html">WAT ZEKER TE DOEN</a>
+			  		<a href="verblijf.html">BOEK JE VERBLIJF</a>
+		  		</nav>
+		</header>
+
+		<h1>Boek hier je verblijf in Estland</h1>
+			<p>Neem zeker een kijke onderaan voor een paar vluchten die in Tallinn Airport aankomen en van Tallinn vertrekken</p>
+
+		<form action="pad/naar/phpbestand.php" method="GET">
+			
+		<h2>Kies je hotel:</h2>
+
+			<p>
+				<select name="hotel">
+					<option label="Maak je keuze"></option>
+					<option>Viru Hotel, Tallinn</option>
+					<option>Radisson Hotel, Tallinn</option>
+					<option>Nunne Boutique Hotel, Tallinn</option>
+					<option>Ammende Villa, P&auml;rnu</option>
+					<option>Barclay Hotel, Tartu</option>
+				</select>
+			</p>
+
+		<h2>Kies je periode</h2>
+
+			<p>
+				<select name="periode">
+					<option label="Maak je keuze"></option>
+					<option>01.oktober-07.oktober 2024</option>
+					<option>08.oktober-14.oktober 2024</option>
+					<option>15.oktober-21.oktober 2024</option>
+					<option>22.oktober-28.oktober 2024</option>
+					<option>29.oktober-04.november 2024</option>
+					<option>05.november-11.november 2024</option>
+					<option>12.november-18.november 2024</option>
+					<option>19.november-25.november 2024</option>
+				</select>
+			</p>
+
+		<h2>Hoeveel personen?</h2>
+
+			<p>
+				<select name="personen">
+					<option label="Maak je keuze"></option>
+					<option>1 persoon </option>
+					<option>2 personen</option>
+					<option>3 personen</option>
+					<option>4 personen</option>
+				</select>
+			</p>
+
+			<p>Kinderbed: 
+				<input type="radio" name="kidsbed">Ja
+				<input type="radio" name="kidsbed">Nee
+			</p>
+
+			<p>Huisdier: 
+				<input type="radio" name="pet">Ja
+				<input type="radio" name="pet">Nee
+			</p>
+
+			<p>Ontbijt: 
+				<input type="radio" name="breakfast">Ja
+				<input type="radio" name="breakfast">Nee
+			</p>
+
+		<h2>Boekinggegevens</h2>
+
+			<p>Voornaam: <input type="text" name="firstname" required></p>
+			<p>Familienaam: <input type="text" name="lastname" required></p>
+			<p>Geslacht: 
+				<input type="radio" name="gender">M
+				<input type="radio" name="gender">V
+			</p>
+			<p>Straat: <input type="text" name="street" required></p>
+			<p>Woonplaats: <input type="text" name="city" required></p>
+			<p>Postcode: <input type="text" name="postalcode" required></p>
+			<p>Land
+				<select name="country">
+					<option label="Maak je keuze"></option>
+					<option>BE</option>
+					<option>SWE</option>
+					<option>UK</option>
+					<option>CRO</option>
+					<option>GR</option>
+					<option>NL</option>
+				</select>
+			</p>
+			<br>
+			<input type="checkbox" name="accept" required> Ik ga akkoord met de algemeene voorwaarden.
+			<p> Plaats je boeking<br>
+			<input type="submit" name="save" value="Save"></p>
+		</form>
+				
+		<h2>Bedankt!</h2>
+		
+		<img src="images/moose-bull-thumb.jpg" alt="Moose says thanks with a cheeky tongue">
+
+		<h2>Informaties over Vluchten</h2>
+			
+		<h3>Vluchten vanuit Tallinn</h3>
+
+			<table border="1">
+				<tr>			
+					<td>Vertrekt naar</td>
+					<td>Vertrek van Tallinn</td>
+					<td>Datum</td>
+					<td>Vluchtmaatschappij</td>
+					<td>Gate</td>
+					<td>Reisduur</td>
+					<td>Directe vlucht</td>
+					<td>Prijs</td>
+				</tr>
+				<tr>			
+					<td>Rhodos</td>
+					<td>07:10 am</td>
+					<td>30.09.2024</td>
+					<td>Air Baltic</td>
+					<td>8</td>
+					<td>4 u</td>
+					<td>Yes</td>
+					<td>213 EUR </td>
+				</tr>
+				<tr>
+					<td>Split</td>
+					<td>12:55 pm</td>			
+					<td>30.09.2024</td>
+					<td>Lufthansa + Croatia Airlines</td>
+					<td>6</td>
+					<td>4 u 45 min</td>
+					<td>No</td>
+					<td>229 EUR</td>
+				</tr>
+				<tr>			
+					<td>Amsterdam</td>
+					<td>07:30 am</td>		
+					<td>01.10.2024</td>	
+					<td>Air Baltic</td>
+					<td>6</td>
+					<td>2 u 30 min</td>
+					<td>Yes</td>
+					<td>335 EUR</td>
+				</tr>
+			</table>
+
+
+		<h3>Vluchten naar Tallinn</h3>
+
+			<table border="1">
+				<tr>
+					<td>Vertrek van</td>
+					<td>Vertrekuurtijd</td>
+					<td>Datum</td>
+					<td>Vluchtmaatschappij</td>
+					<td>Gate</td>
+					<td>Reisduur</td>
+					<td>Directe vlucht</td>
+					<td>Prijs</td>
+				</tr>
+				<tr>
+					<td>Stockholm</td>
+					<td>08:25 am</td>
+					<td>01.10.2024</td>
+					<td>SAS</td>
+					<td>5</td>
+					<td>1 u</td>
+					<td>Yes</td>
+					<td>119 EUR</td>
+				</tr>
+				<tr>
+					<td>London</td>			
+					<td>06:40 am</td>
+					<td>02.10.2024</td>
+					<td>Brussels Airlines + Air Baltic</td>
+					<td>2</td>
+					<td>4 u 15 min</td>
+					<td>No</td>
+					<td>246 EUR</td>
+				</tr>
+				<tr>
+					<td>Brussels</td>			
+					<td>09:40 am</td>
+					<td>01.10.2024</td>
+					<td>Air Baltic</td>
+					<td>7</td>
+					<td>2 u 25 min</td>
+					<td>Yes</td>
+					<td>495 EUR</td>
+				</tr>
+			</table>
+	</body>
+</html>
